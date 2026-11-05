@@ -1,0 +1,101 @@
+﻿product_id,product_name,category,subcategory,list_price,unit_cost,popularity_weight,is_active
+P0001,Arroz 01,Abarrotes,Arroz,262.37,195.67,1.493,1
+P0002,Arroz 02,Abarrotes,Arroz,479.47,349.28,1.655,1
+P0003,Arroz 03,Abarrotes,Arroz,404.05,340.59,1.1,1
+P0004,Arroz 04,Abarrotes,Arroz,363.2,289.62,1.119,1
+P0005,Aceite 01,Abarrotes,Aceite,139.04,115.66,2.314,1
+P0006,Aceite 02,Abarrotes,Aceite,422.9,351.66,0.954,1
+P0007,Aceite 03,Abarrotes,Aceite,475.03,377.5,0.436,1
+P0008,Aceite 04,Abarrotes,Aceite,154.67,119.33,0.657,1
+P0009,Pastas 01,Abarrotes,Pastas,258.97,190.44,1.559,1
+P0010,Pastas 02,Abarrotes,Pastas,317.01,243.76,0.519,1
+P0011,Pastas 03,Abarrotes,Pastas,358.3,293.65,1.218,1
+P0012,Pastas 04,Abarrotes,Pastas,443.04,313.83,0.914,1
+P0013,Conservas 01,Abarrotes,Conservas,354.22,285.17,0.43,1
+P0014,Conservas 02,Abarrotes,Conservas,300.79,234.7,0.948,1
+P0015,Conservas 03,Abarrotes,Conservas,179.24,144.22,1.145,1
+P0016,Conservas 04,Abarrotes,Conservas,444.2,365.3,1.176,1
+P0017,Refrescos 01,Bebidas,Refrescos,122.11,91.58,1.237,1
+P0018,Refrescos 02,Bebidas,Refrescos,114.7,77.3,1.196,1
+P0019,Refrescos 03,Bebidas,Refrescos,234.96,161.18,0.802,1
+P0020,Refrescos 04,Bebidas,Refrescos,216.43,136.95,1.274,1
+P0021,Jugos 01,Bebidas,Jugos,392.97,285.28,1.185,1
+P0022,Jugos 02,Bebidas,Jugos,349.2,224.03,0.543,1
+P0023,Jugos 03,Bebidas,Jugos,412.96,275.6,1.493,1
+P0024,Jugos 04,Bebidas,Jugos,68.31,39.11,1.058,1
+P0025,Agua 01,Bebidas,Agua,241.44,157.25,0.872,1
+P0026,Agua 02,Bebidas,Agua,451.4,306.97,1.984,1
+P0027,Agua 03,Bebidas,Agua,266.29,187.83,0.988,1
+P0028,Agua 04,Bebidas,Agua,259.58,190.7,0.73,1
+P0029,Café 01,Bebidas,Café,330.2,214.71,1.069,1
+P0030,Café 02,Bebidas,Café,119.91,84.1,1.2,1
+P0031,Café 03,Bebidas,Café,170.01,118.08,0.771,1
+P0032,Café 04,Bebidas,Café,231.32,154.26,0.631,1
+P0033,Leche 01,Lácteos,Leche,400.48,304.97,1.458,1
+P0034,Leche 02,Lácteos,Leche,132.03,95.98,1.434,1
+P0035,Leche 03,Lácteos,Leche,162.19,109.97,0.401,1
+P0036,Leche 04,Lácteos,Leche,374.93,261.8,0.65,1
+P0037,Yogurt 01,Lácteos,Yogurt,352.6,250.1,0.779,1
+P0038,Yogurt 02,Lácteos,Yogurt,198.18,150.87,0.989,1
+P0039,Yogurt 03,Lácteos,Yogurt,221.78,157.98,1.355,1
+P0040,Yogurt 04,Lácteos,Yogurt,227.9,180.85,1.063,1
+P0041,Quesos 01,Lácteos,Quesos,420.44,340.28,1.348,1
+P0042,Quesos 02,Lácteos,Quesos,382.09,293.87,0.731,1
+P0043,Quesos 03,Lácteos,Quesos,238.16,204.55,1.642,1
+P0044,Quesos 04,Lácteos,Quesos,136.36,96.69,0.552,1
+P0045,Higiene 01,Cuidado personal,Higiene,307.0,170.49,0.558,1
+P0046,Higiene 02,Cuidado personal,Higiene,364.71,208.0,2.929,1
+P0047,Higiene 03,Cuidado personal,Higiene,710.03,417.25,1.054,1
+P0048,Higiene 04,Cuidado personal,Higiene,696.94,386.39,0.844,1
+P0049,Cuidado del cabello 01,Cuidado personal,Cuidado del cabello,285.62,192.4,1.003,1
+P0050,Cuidado del cabello 02,Cuidado personal,Cuidado del cabello,849.31,557.22,1.411,1
+P0051,Cuidado del cabello 03,Cuidado personal,Cuidado del cabello,354.5,229.57,1.033,1
+P0052,Cuidado del cabello 04,Cuidado personal,Cuidado del cabello,723.4,441.86,0.859,1
+P0053,Cuidado corporal 01,Cuidado personal,Cuidado corporal,873.81,498.62,0.872,1
+P0054,Cuidado corporal 02,Cuidado personal,Cuidado corporal,875.9,540.67,1.786,1
+P0055,Cuidado corporal 03,Cuidado personal,Cuidado corporal,766.23,477.49,2.434,1
+P0056,Cuidado corporal 04,Cuidado personal,Cuidado corporal,297.84,179.73,0.659,1
+P0057,Limpieza 01,Hogar,Limpieza,122.55,83.66,0.89,1
+P0058,Limpieza 02,Hogar,Limpieza,985.0,618.36,3.079,1
+P0059,Limpieza 03,Hogar,Limpieza,243.2,159.85,1.099,1
+P0060,Limpieza 04,Hogar,Limpieza,576.96,341.6,1.122,1
+P0061,Desechables 01,Hogar,Desechables,182.77,126.04,0.477,1
+P0062,Desechables 02,Hogar,Desechables,487.76,307.17,0.365,1
+P0063,Desechables 03,Hogar,Desechables,876.74,559.64,0.982,1
+P0064,Desechables 04,Hogar,Desechables,831.34,510.38,0.389,1
+P0065,Organización 01,Hogar,Organización,241.38,155.43,1.077,1
+P0066,Organización 02,Hogar,Organización,734.14,447.11,0.684,1
+P0067,Organización 03,Hogar,Organización,342.0,234.15,0.64,1
+P0068,Organización 04,Hogar,Organización,903.16,591.34,0.963,1
+P0069,Galletas 01,Snacks,Galletas,405.2,210.17,1.125,1
+P0070,Galletas 02,Snacks,Galletas,136.73,63.73,0.844,1
+P0071,Galletas 03,Snacks,Galletas,495.15,253.23,1.001,1
+P0072,Galletas 04,Snacks,Galletas,208.46,115.03,1.084,1
+P0073,Frutos secos 01,Snacks,Frutos secos,555.6,301.8,0.971,1
+P0074,Frutos secos 02,Snacks,Frutos secos,396.73,198.85,1.056,1
+P0075,Frutos secos 03,Snacks,Frutos secos,248.33,123.73,1.301,1
+P0076,Frutos secos 04,Snacks,Frutos secos,551.43,292.25,0.706,1
+P0077,Chocolates 01,Snacks,Chocolates,300.86,167.79,0.469,1
+P0078,Chocolates 02,Snacks,Chocolates,391.4,217.03,0.556,1
+P0079,Chocolates 03,Snacks,Chocolates,562.83,303.89,1.004,1
+P0080,Chocolates 04,Snacks,Chocolates,425.24,243.84,0.553,1
+P0081,Vegetales 01,Congelados,Vegetales,680.57,488.02,1.019,1
+P0082,Vegetales 02,Congelados,Vegetales,710.57,454.8,0.982,1
+P0083,Vegetales 03,Congelados,Vegetales,283.01,195.49,1.653,1
+P0084,Vegetales 04,Congelados,Vegetales,532.31,340.02,0.891,1
+P0085,Comidas preparadas 01,Congelados,Comidas preparadas,513.55,321.21,0.863,1
+P0086,Comidas preparadas 02,Congelados,Comidas preparadas,577.45,408.96,1.435,1
+P0087,Comidas preparadas 03,Congelados,Comidas preparadas,184.55,125.39,0.996,1
+P0088,Comidas preparadas 04,Congelados,Comidas preparadas,298.95,188.46,1.723,1
+P0089,Helados 01,Congelados,Helados,821.74,576.44,1.258,1
+P0090,Helados 02,Congelados,Helados,425.98,286.7,0.501,1
+P0091,Helados 03,Congelados,Helados,795.35,542.51,2.108,1
+P0092,Helados 04,Congelados,Helados,823.4,525.46,0.607,1
+P0093,Pan 01,Panadería,Pan,185.71,99.24,1.102,1
+P0094,Pan 02,Panadería,Pan,109.0,56.59,0.62,1
+P0095,Pan 03,Panadería,Pan,351.67,153.37,1.872,1
+P0096,Pan 04,Panadería,Pan,149.04,71.49,1.715,1
+P0097,Repostería 01,Panadería,Repostería,212.56,99.96,1.364,1
+P0098,Repostería 02,Panadería,Repostería,230.15,119.43,0.434,1
+P0099,Repostería 03,Panadería,Repostería,334.01,128.13,0.416,1
+P0100,Repostería 04,Panadería,Repostería,247.78,121.51,0.859,1

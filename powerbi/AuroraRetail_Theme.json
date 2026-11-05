@@ -1,0 +1,47 @@
+{
+  "name": "Aurora Retail",
+  "dataColors": [
+    "#0F766E",
+    "#2F80ED",
+    "#F26B5B",
+    "#F4B942",
+    "#5B8DEF",
+    "#74C69D",
+    "#B08968",
+    "#8E9AAF"
+  ],
+  "foreground": "#183B56",
+  "foregroundNeutralSecondary": "#6B7C8F",
+  "foregroundNeutralTertiary": "#A8B6C3",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F4F7F9",
+  "backgroundNeutral": "#E6EDF2",
+  "tableAccent": "#0F766E",
+  "good": "#168C78",
+  "neutral": "#F4B942",
+  "bad": "#D84B3E",
+  "maximum": "#0F766E",
+  "minimum": "#F26B5B",
+  "textClasses": {
+    "callout": {
+      "fontSize": 30,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#183B56"
+    },
+    "title": {
+      "fontSize": 16,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#183B56"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#183B56"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#6B7C8F"
+    }
+  }
+}

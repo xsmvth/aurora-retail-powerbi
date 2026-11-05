@@ -1,0 +1,106 @@
+// Crear una tabla calculada vacía llamada _Medidas y añadir estas medidas allí.
+_Medidas =
+ROW("Nota", "Carpeta de medidas del modelo")
+
+// Ventas y rentabilidad
+Ingresos netos = SUM(fact_sales[revenue])
+
+Costo total = SUM(fact_sales[cost])
+
+Utilidad bruta = [Ingresos netos] - [Costo total]
+
+Margen bruto % = DIVIDE([Utilidad bruta], [Ingresos netos])
+
+Unidades netas = SUM(fact_sales[quantity])
+
+Pedidos = DISTINCTCOUNT(fact_sales[order_key])
+
+Ticket promedio = DIVIDE([Ingresos netos], [Pedidos])
+
+Costo promedio por pedido = DIVIDE([Costo total], [Pedidos])
+
+// Clientes
+Clientes activos = DISTINCTCOUNT(fact_sales[customer_key])
+
+Clientes recurrentes =
+VAR ClientesConConteo =
+    ADDCOLUMNS(
+        SUMMARIZE(fact_sales, dim_customer[customer_key]),
+        "@Pedidos", CALCULATE(DISTINCTCOUNT(fact_sales[order_key]))
+    )
+RETURN
+    COUNTROWS(FILTER(ClientesConConteo, [@Pedidos] > 1))
+
+Tasa de recompra = DIVIDE([Clientes recurrentes], [Clientes activos])
+
+Pedidos por cliente = DIVIDE([Pedidos], [Clientes activos])
+
+Ingreso por cliente = DIVIDE([Ingresos netos], [Clientes activos])
+
+// Metas
+Meta de ingresos = SUM(fact_targets[target_revenue])
+
+Cumplimiento de meta = DIVIDE([Ingresos netos], [Meta de ingresos])
+
+Brecha contra meta = [Ingresos netos] - [Meta de ingresos]
+
+// Devoluciones
+Líneas devueltas =
+CALCULATE(
+    COUNTROWS(fact_sales),
+    fact_sales[is_return] = TRUE()
+)
+
+Tasa de devolución =
+DIVIDE(
+    [Líneas devueltas],
+    COUNTROWS(fact_sales)
+)
+
+// Inteligencia de tiempo (requiere dim_date marcada como tabla de fechas)
+Ingresos mes anterior =
+CALCULATE(
+    [Ingresos netos],
+    DATEADD(dim_date[date], -1, MONTH)
+)
+
+Variación MoM % =
+DIVIDE(
+    [Ingresos netos] - [Ingresos mes anterior],
+    [Ingresos mes anterior]
+)
+
+Ingresos mismo mes año anterior =
+CALCULATE(
+    [Ingresos netos],
+    DATEADD(dim_date[date], -1, YEAR)
+)
+
+Variación YoY % =
+DIVIDE(
+    [Ingresos netos] - [Ingresos mismo mes año anterior],
+    [Ingresos mismo mes año anterior]
+)
+
+// Ranking para tablas y etiquetas
+Ranking de tienda =
+RANKX(
+    ALLSELECTED(dim_store[store_name]),
+    [Ingresos netos],
+    BLANK(),
+    DESC,
+    DENSE
+)
+
+Ranking de categoría =
+RANKX(
+    ALLSELECTED(dim_product[category]),
+    [Ingresos netos],
+    BLANK(),
+    DESC,
+    DENSE
+)
+
+// Formato sugerido
+// Ingresos, costos, utilidad, ticket, meta y brecha: moneda RD$ con 0 decimales.
+// Margen, cumplimiento, recompra, devolución y variaciones: porcentaje con 1 decimal.

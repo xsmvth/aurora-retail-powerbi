@@ -1,0 +1,9 @@
+﻿store_id,store_name,region,city,store_type,opening_date,demand_weight
+T001,Aurora Naco,Distrito Nacional,Santo Domingo,Urbana,2019-03-18,1.35
+T002,Aurora Piantini,Distrito Nacional,Santo Domingo,Urbana,2020-08-07,1.28
+T003,Aurora Bella Vista,Distrito Nacional,Santo Domingo,Urbana,2021-02-12,1.12
+T004,Aurora Santiago Centro,Cibao,Santiago,Urbana,2018-11-23,1.18
+T005,Aurora Los Jardines,Cibao,Santiago,Urbana,2022-05-20,1.03
+T006,Aurora La Romana,Este,La Romana,Regional,2020-01-31,0.82
+T007,Aurora Punta Cana,Este,Punta Cana,Turística,2021-10-15,0.94
+T008,Aurora Puerto Plata,Norte,Puerto Plata,Regional,2023-04-14,0.76

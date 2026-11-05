@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Salidas reproducibles por pipeline/run_pipeline.py
+data/warehouse/*
+!data/warehouse/.gitkeep
+data/export/*
+!data/export/.gitkeep
+data/quality/*
+!data/quality/.gitkeep
+
+screenshots/*.tmp
