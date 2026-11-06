@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Caso de portafolio end-to-end: ETL en Python, modelo estrella SQL y tablero ejecutivo en Power BI."
+    />
+    <meta name="theme-color" content="#0b2437" />
+    <meta property="og:title" content="Aurora Retail · Caso de estudio BI" />
+    <meta
+      property="og:description"
+      content="Un pipeline reproducible que convierte ventas dispersas en decisiones comerciales."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/screenshots/01_resumen_ejecutivo.png" />
+    <title>Aurora Retail · Caso de estudio BI</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+      <div class="header-inner shell">
+        <a class="brand" href="#inicio" aria-label="Aurora Retail, inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-copy">
+            <strong>Aurora Retail</strong>
+            <span>Business intelligence</span>
+          </span>
+        </a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-button
+        >
+          <span class="sr-only">Abrir navegación</span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-navigation" aria-label="Navegación principal" data-nav>
+          <a href="#proceso">Proceso</a>
+          <a href="#tablero">Tablero</a>
+          <a href="#hallazgos">Hallazgos</a>
+          <a
+            class="nav-external"
+            href="https://github.com/xsmvth/aurora-retail-powerbi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 12 12 4M6 4h6v6" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              De datos dispersos a
+              <span>decisiones claras.</span>
+            </h1>
+            <p class="hero-intro">
+              Un caso de análisis de ventas de punta a punta: recepción de archivos,
+              validación, almacén SQL y un tablero ejecutivo en Power BI.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#tablero">
+                Explorar el tablero
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M4 9h10M10 5l4 4-4 4" />
+                </svg>
+              </a>
+              <a
+                class="button button-quiet"
+                href="https://github.com/xsmvth/aurora-retail-powerbi"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver el proyecto
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero-visual">
+            <div class="report-window">
+              <div class="window-bar" aria-hidden="true">
+                <span class="window-brand">A</span>
+                <span class="window-title">Resumen ejecutivo</span>
+                <span class="window-status">
+                  <i></i>
+                  Actualización diaria
+                </span>
+              </div>
+              <img
+                src="/screenshots/01_resumen_ejecutivo.png"
+                alt="Vista de resumen ejecutivo con ingresos, margen, pedidos, ticket promedio y tendencia mensual"
+                width="1600"
+                height="900"
+                fetchpriority="high"
+              />
+            </div>
+            <figcaption>
+              Datos simulados · enero 2025 a octubre 2026
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="shell metric-rail" aria-label="Indicadores principales del proyecto">
+          <div class="metric">
+            <strong>91,412</strong>
+            <span>líneas de venta</span>
+          </div>
+          <div class="metric">
+            <strong>60,000</strong>
+            <span>clientes modelados</span>
+          </div>
+          <div class="metric">
+            <strong>RD$ 40.1 M</strong>
+            <span>ingresos netos</span>
+          </div>
+          <div class="metric">
+            <strong>99.4%</strong>
+            <span>cumplimiento de meta</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section" id="proceso" aria-labelledby="process-title">
+        <div class="shell">
+          <div class="section-heading section-heading-dark">
+            <h2 id="process-title">Un flujo diseñado para repetirse sin errores.</h2>
+            <p>
+              Cada lote pasa por controles antes de llegar al informe. Los reintentos
+              son seguros y Power BI consume una versión consistente de los datos.
+            </p>
+          </div>
+
+          <ol class="process-track">
+            <li>
+              <span class="step-number">01</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M7 8h18v6H7zM7 18h18v6H7zM11 5v22M21 5v22" />
+                </svg>
+              </div>
+              <h3>Fuentes</h3>
+              <p>Ventas por trimestre, maestros y metas mensuales en CSV.</p>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="m9 16 5 5 9-11M6 5h20v22H6z" />
+                </svg>
+              </div>
+              <h3>Validar</h3>
+              <p>Hash, claves, tipos, descuentos y devoluciones antes de cargar.</p>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <ellipse cx="16" cy="8" rx="10" ry="4" />
+                  <path d="M6 8v8c0 2.2 4.5 4 10 4s10-1.8 10-4V8M6 16v8c0 2.2 4.5 4 10 4s10-1.8 10-4v-8" />
+                </svg>
+              </div>
+              <h3>Almacenar</h3>
+              <p>Modelo estrella en SQLite, con ruta opcional a PostgreSQL.</p>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <path d="M5 26V16M12 26V10M19 26V19M26 26V5" />
+                </svg>
+              </div>
+              <h3>Analizar</h3>
+              <p>Medidas DAX, actualización programada y lectura ejecutiva.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="dashboard-section section" id="tablero" aria-labelledby="dashboard-title">
+        <div class="shell">
+          <div class="section-heading dashboard-heading">
+            <h2 id="dashboard-title">Tres preguntas. Un tablero.</h2>
+            <p>
+              Dirección, operación y clientes comparten el mismo modelo semántico.
+              Cambia de vista para recorrer las decisiones que habilita el informe.
+            </p>
+          </div>
+
+          <div class="dashboard-layout">
+            <div class="dashboard-tabs" role="tablist" aria-label="Vistas del tablero">
+              <button
+                class="dashboard-tab is-active"
+                id="tab-direccion"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="dashboard-panel"
+                data-dashboard-tab
+                data-image="/screenshots/01_resumen_ejecutivo.png"
+                data-title="Resumen ejecutivo"
+                data-description="Ingresos, margen, cumplimiento y tendencia mensual para dirección."
+                data-alt="Vista de resumen ejecutivo con ingresos, margen, pedidos, ticket promedio y tendencia mensual"
+              >
+                <span>01</span>
+                <strong>Dirección</strong>
+                <small>Resumen ejecutivo</small>
+              </button>
+              <button
+                class="dashboard-tab"
+                id="tab-comercial"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="dashboard-panel"
+                data-dashboard-tab
+                data-image="/screenshots/02_rendimiento_comercial.png"
+                data-title="Rendimiento comercial"
+                data-description="Tiendas, canales, categorías y métodos de pago en una sola lectura."
+                data-alt="Vista comercial con ingreso por tienda, margen por canal, categorías y métodos de pago"
+                tabindex="-1"
+              >
+                <span>02</span>
+                <strong>Comercial</strong>
+                <small>Tiendas y canales</small>
+              </button>
+              <button
+                class="dashboard-tab"
+                id="tab-clientes"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="dashboard-panel"
+                data-dashboard-tab
+                data-image="/screenshots/03_clientes_y_calidad.png"
+                data-title="Clientes y calidad"
+                data-description="Recompra, segmentos, devoluciones y estado del pipeline."
+                data-alt="Vista de clientes y calidad con recompra, segmentos, devoluciones y controles del pipeline"
+                tabindex="-1"
+              >
+                <span>03</span>
+                <strong>Clientes</strong>
+                <small>Recompra y calidad</small>
+              </button>
+            </div>
+
+            <figure
+              class="dashboard-panel"
+              id="dashboard-panel"
+              role="tabpanel"
+              aria-labelledby="tab-direccion"
+              tabindex="0"
+            >
+              <div class="dashboard-meta">
+                <div>
+                  <h3 data-dashboard-title>Resumen ejecutivo</h3>
+                  <p data-dashboard-description>
+                    Ingresos, margen, cumplimiento y tendencia mensual para dirección.
+                  </p>
+                </div>
+                <span class="dashboard-counter" data-dashboard-counter>01 / 03</span>
+              </div>
+              <div class="dashboard-image-wrap">
+                <img
+                  src="/screenshots/01_resumen_ejecutivo.png"
+                  alt="Vista de resumen ejecutivo con ingresos, margen, pedidos, ticket promedio y tendencia mensual"
+                  width="1600"
+                  height="900"
+                  data-dashboard-image
+                />
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="findings section" id="hallazgos" aria-labelledby="findings-title">
+        <div class="shell findings-grid">
+          <div class="finding-lead">
+            <h2 id="findings-title">Los datos también muestran dónde actuar.</h2>
+            <p>
+              El tablero no se queda en describir el pasado. Prioriza oportunidades
+              comerciales concretas y deja visibles los controles de calidad.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/xsmvth/aurora-retail-powerbi/blob/main/docs/HALLAZGOS.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Leer hallazgos completos
+              <svg viewBox="0 0 18 18" aria-hidden="true">
+                <path d="M4 9h10M10 5l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="findings-list">
+            <article class="finding finding-coral">
+              <strong>60%</strong>
+              <div>
+                <h3>Compró una sola vez</h3>
+                <p>
+                  Hay margen para campañas de segunda compra y medición de uplift.
+                </p>
+              </div>
+            </article>
+            <article class="finding finding-green">
+              <strong>18.1%</strong>
+              <div>
+                <h3>Ingresos en cuidado personal</h3>
+                <p>
+                  Es la categoría líder; panadería aporta el mayor margen, 52.2%.
+                </p>
+              </div>
+            </article>
+            <article class="finding finding-navy">
+              <strong>RD$ 2.6 M</strong>
+              <div>
+                <h3>Pico en diciembre 2025</h3>
+                <p>
+                  La estacionalidad exige anticipar inventario, personal y campañas.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="engineering section" aria-labelledby="engineering-title">
+        <div class="shell engineering-grid">
+          <div>
+            <h2 id="engineering-title">Reproducible desde el primer archivo.</h2>
+            <p class="engineering-intro">
+              La entrega incluye datos fuente ficticios, ETL, DDL, medidas DAX,
+              documentación y pruebas automáticas.
+            </p>
+
+            <dl class="stack-list">
+              <div>
+                <dt>Ingesta y calidad</dt>
+                <dd>Python · Pandas · SHA-256</dd>
+              </div>
+              <div>
+                <dt>Almacén</dt>
+                <dd>SQLite · PostgreSQL</dd>
+              </div>
+              <div>
+                <dt>Analítica</dt>
+                <dd>Power BI · DAX · modelo estrella</dd>
+              </div>
+              <div>
+                <dt>Operación</dt>
+                <dd>PowerShell · Task Scheduler · GitHub Actions</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="engineering-actions">
+            <div class="code-card" aria-label="Comando para ejecutar el pipeline">
+              <div class="code-card-bar">
+                <span>PowerShell</span>
+                <span aria-hidden="true">● ● ●</span>
+              </div>
+              <pre><code><span class="code-muted"># reconstruir almacén y exportaciones</span>
+.\scripts\actualizar_datos.ps1</code></pre>
+            </div>
+            <div class="resource-links">
+              <a
+                href="https://github.com/xsmvth/aurora-retail-powerbi/blob/main/docs/ARQUITECTURA.md"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Arquitectura y operación</span>
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M4 9h10M10 5l4 4-4 4" />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/xsmvth/aurora-retail-powerbi/blob/main/powerbi/GUIA_POWER_BI.md"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Guía de Power BI</span>
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M4 9h10M10 5l4 4-4 4" />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/xsmvth/aurora-retail-powerbi/blob/main/powerbi/medidas.dax"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Medidas DAX</span>
+                <svg viewBox="0 0 18 18" aria-hidden="true">
+                  <path d="M4 9h10M10 5l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="shell closing-inner">
+          <div>
+            <h2 id="closing-title">Un proyecto completo,<br />listo para revisar.</h2>
+            <p>
+              Explora el código, las decisiones técnicas y la guía para reconstruir
+              el informe en Power BI.
+            </p>
+          </div>
+          <a
+            class="button button-light"
+            href="https://github.com/xsmvth/aurora-retail-powerbi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Abrir repositorio
+            <svg viewBox="0 0 18 18" aria-hidden="true">
+              <path d="M4 9h10M10 5l4 4-4 4" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>Aurora Retail · Caso de estudio con datos simulados</p>
+        <p>© <span data-year></span> Mathieu Sanchez</p>
+      </div>
+    </footer>
+  </body>
+</html>

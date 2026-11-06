@@ -1,0 +1,16 @@
+{
+  "name": "Aurora Retail · Caso de estudio BI",
+  "short_name": "Aurora Retail",
+  "description": "Pipeline de datos y tablero ejecutivo en Power BI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f7f8",
+  "theme_color": "#0b2437",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

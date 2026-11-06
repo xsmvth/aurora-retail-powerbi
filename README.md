@@ -2,6 +2,8 @@
 
 [![Tests](https://github.com/xsmvth/aurora-retail-powerbi/actions/workflows/tests.yml/badge.svg)](https://github.com/xsmvth/aurora-retail-powerbi/actions/workflows/tests.yml)
 
+[Ver la presentación interactiva](https://aurora-retail-powerbi.vercel.app)
+
 Caso de portafolio end-to-end para una cadena ficticia de retail: generación y
 recepción de datos, validación de calidad, almacén analítico, modelo estrella y
 diseño de un tablero ejecutivo en Power BI con actualización programada.
